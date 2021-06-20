@@ -23,15 +23,19 @@ def home(request):
     else:
         comments = db.child('Comments').get()
         valuess = comments.each()
-        g = 0
         t=[]
         q=[]
+        pp=[]
+        qq=[]
         for i in valuess:
             t.append(i.val()['Username'])
         for i in valuess:
             q.append(i.val()['Comment_Description'])
+      
         x = zip(t,q)
         y=list(x)
+
+
         return httpss.render(request,'Home.html',{'Infos':y})
     
 
