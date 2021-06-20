@@ -1,0 +1,37 @@
+<title>Sign Up</title>
+{% extends 'Base.html' %} {% block content %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/Log_up.css' %}">
+</head>
+
+<body>
+    <script>
+        alert("{{error}}");
+    </script>
+    <div id="align">
+        <form action="/Home/sign-in/" method="post" id="form">
+            {% csrf_token %}
+            <label>User Name</label>
+            <input type="text" name="username" placeholder="Ahmad_is_pretty_good">
+            <br>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="learneasily@gmail.com">
+            <br>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Ahmad is good">
+            <br>
+            <input type="submit" id="button">
+            <small>Already a member <a href="/Home/sign-in/">Log In </a></small>
+        </form>
+    </div>
+
+</body>
+
+</html>
+{% endblock %}

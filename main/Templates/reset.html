@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+</head>
+
+<body>
+    <form action="/Home/sign-in/reset_password/" method="post" id="form">
+        {% csrf_token %}
+        <label for="">Email</label> <br>
+        <!--<small id="er1">Wrong Email</small>-->
+        <input type="email" name="email" placeholder="Enter your Email">
+        <br>
+        <small style="font-size: 13px; display:table-row;">We will send you a password reset to your email</small>
+        <br>
+        <input type="submit" value="Submit" id="btn">
+    </form>
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        $('#er1').hide();
+        $('#btn').click(function() {
+            event.preventDefault()
+            if ($('#email').val() == $('#email').val(null)) {
+                $('#er1').show();
+                console.log("yea");
+                event.preventDefault();
+            } else {
+                window.location.href = "http://www.google.com";
+            }
+        });
+    </script>-->
+</body>
+
+</html>

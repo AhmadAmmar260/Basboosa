@@ -1,0 +1,67 @@
+body {
+    margin: 1;
+    font-family: "comic sans MS";
+    background-image: url("images/sea.jpg");
+    /*background-repeat: no-repeat;*/
+    background-position-x: center;
+    height: 100%;
+    width: 100%;
+    font-family: "comic sans MS";
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+
+/*Nav Bar*/
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.815);
+    z-index: 1;
+    text-align: center;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgb(50, 192, 211);
+    padding: 10px;
+}
+
+#navbar a:hover {
+    /*border: 1px solid rgb(226, 97, 11);
+    background-color: rgba(255, 255, 255, 0.829);*/
+    color: rgb(226, 97, 11);
+}
+
+#logo h3 {
+    display: inline;
+    position: relative;
+    color: rgb(255, 115, 0);
+    font-size: 33px;
+    font-weight: normal;
+}
+
+
+/*Nav Bar End*/
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    #navbar {
+        text-align: left;
+        padding-left: 10px;
+    }
+    #logo {
+        display: contents;
+    }
+    #brekline {
+        display: none;
+    }
+}
