@@ -31,7 +31,7 @@ def home(request):
             t.append(i.val()['Username'])
         for i in valuess:
             q.append(i.val()['Comment_Description'])
-      
+      xxx=1
         x = zip(t,q)
         y=list(x)
 
