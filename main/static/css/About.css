@@ -1,0 +1,61 @@
+body {
+    background-image: url("../css/images/sea.jpg");
+    background-position-x: center;
+    font-family: "comic sans MS";
+}
+
+
+/*Nav Bar*/
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin-right: 0%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.815);
+    z-index: 1;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgb(50, 192, 211);
+    padding: 10px;
+}
+
+#navbar a:hover {
+    border: 1px solid rgb(226, 97, 11);
+    background-color: rgba(255, 255, 255, 0.829);
+    color: rgb(226, 97, 11);
+}
+
+#logo h3 {
+    display: inline;
+    position: relative;
+    color: rgb(255, 115, 0);
+    font-size: 33px;
+}
+
+#O2 {
+    right: 33px;
+}
+
+#S2 {
+    right: 33px;
+}
+
+#A2 {
+    right: 33px;
+}
+
+
+/*Nav Bar End*/
+
+#con-area {
+    border: 2px solid rgba(255, 255, 255, 0.692);
+    background-color: rgba(255, 255, 255, 0.692);
+    border-radius: 7px;
+    margin-top: 70px;
+}

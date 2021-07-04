@@ -1,0 +1,514 @@
+/* work-sans-regular - latin */
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/work-sans-v8-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''), url('/fonts/work-sans-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/work-sans-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/work-sans-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('/fonts/work-sans-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/work-sans-v8-latin-regular.svg#WorkSans') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    /* background-color: rgb(120, 87, 151); */
+    font-family: "Work Sans";
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+
+/**/
+
+#conarea {
+    display: inline-block;
+    background-color: rgba(235, 222, 222, 0.767);
+    border-radius: 10px;
+    margin: 0.5em;
+    margin-top: 100px;
+    text-align: justify;
+}
+
+
+/*-----More Topics Area-----*/
+
+#moretop-sec {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 75px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#moretop-con {
+    border: 1px solid rgba(0, 142, 255, 0.89);
+    background-color: rgba(0, 142, 255, 0.89);
+    float: left;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 20px;
+}
+
+
+/*More Topics Close Button*/
+
+#moretop-close {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+}
+
+#moretop-close:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+/**/
+
+#moretop-con li {
+    list-style: none;
+}
+
+#moretop-con li {
+    border-left: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 34px;
+}
+
+#moretop-con a {
+    color: white;
+}
+
+#moretop-con hr {
+    color: black;
+    height: 2px;
+    margin: 2px;
+    box-shadow: none;
+}
+
+#moretopbtn {
+    position: fixed;
+    z-index: 1;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    top: 40px;
+    left: 24px;
+    cursor: pointer;
+}
+
+#moretopbtn:hover {
+    background-color: rgba(0, 142, 255, 0.89);
+    border-radius: 10px;
+}
+
+#moretopbtn2 {
+    display: none;
+}
+
+
+/*Topics Area*/
+
+#drop1 {
+    display: none;
+    text-align: left;
+}
+
+#top1,
+#top1:visited {
+    color: black;
+    text-align: center;
+}
+
+#top1:hover {
+    color: rgb(0, 68, 255);
+    font-style: italic;
+}
+
+#drop1 a:visited {
+    text-decoration: none;
+}
+
+
+/*-----More Topics Area End-----*/
+
+
+/*Post Card*/
+
+#post-card {
+    padding: 1em;
+    margin: 0.5em;
+    margin-top: 16px;
+    margin-left: -0.5px;
+    border: 2px solid rgb(0, 119, 255);
+    box-sizing: border-box;
+    border-radius: 7px;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    max-width: 1700px;
+}
+
+#post-card p {
+    width: 100%;
+}
+
+#post-card ::selection {
+    background-color: rgb(96, 169, 159);
+    color: white;
+}
+
+
+/*Comment Button Section*/
+
+#p-comment {
+    color: rgb(96, 169, 159);
+    padding-right: 2px;
+}
+
+#p-comment svg:hover {
+    color: darkgreen;
+}
+
+
+/*like Button Section*/
+
+.like {
+    color: rgb(96, 169, 159);
+    padding-right: 2px;
+}
+
+.like svg:hover {
+    color: rgb(0, 4, 255);
+}
+
+
+/*Dislike Button Section*/
+
+.dislike {
+    color: rgb(96, 169, 159);
+    padding-right: 2px;
+}
+
+.dislike svg:hover {
+    color: red;
+}
+
+.dislike svg {
+    text-align: right;
+}
+
+#likenum {
+    color: rgb(105, 101, 101);
+    font-size: 12px;
+}
+
+
+/*Heart Button Section*/
+
+.heart:hover {
+    color: red;
+}
+
+.heart {
+    color: rgb(96, 169, 159);
+}
+
+#comn {
+    color: rgb(105, 101, 101);
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+
+/*Comment Section*/
+
+#comm-sec {
+    margin-top: 5px;
+    margin-left: 28px;
+    margin-bottom: 5px;
+    border-left: 1px solid rgb(0, 119, 255);
+    padding: 10px;
+}
+
+#comm {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+#comm h6 {
+    text-align: left;
+    padding: 5px;
+}
+
+
+/*Your Comment*/
+
+
+/*
+#your-comm {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+#text {
+    outline-color: darkgreen;
+    display: flex;
+    overflow: hidden;
+}
+
+#your-comm svg:hover {
+    color: olivedrab;
+}*/
+
+#new-commbtn {
+    border: rgb(0, 153, 255) 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 3px;
+    float: left;
+}
+
+#new-commbtn:hover {
+    color: white;
+    background-color: rgb(0, 153, 255);
+}
+
+
+/*
+#new-commbtn2 {
+    border: rgb(255, 0, 0) 1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 3px;
+    float: right;
+}
+
+#new-commbtn2:hover {
+    color: white;
+    background-color: rgb(255, 0, 0);
+}*/
+
+
+/*Report Section*/
+
+.report {
+    text-decoration: none;
+    color: black;
+}
+
+.report:hover {
+    color: red;
+}
+
+#report-sec {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#report-con {
+    border: 1px solid rgba(255, 255, 255, 0.664);
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.664);
+    display: inline-block;
+    padding: 1em;
+}
+
+#close {
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#button {
+    border: red 1px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 7px;
+}
+
+#button:hover {
+    color: white;
+    background-color: red;
+}
+
+#close:hover,
+#close :focus {
+    color: red;
+}
+
+#textarea {
+    display: none;
+}
+
+
+/*Report Section End*/
+
+
+/*Replay Section*/
+
+#replay-sec {
+    margin-left: 18px;
+    border-left: 1px solid rgb(0, 0, 0);
+    padding-left: 2px;
+}
+
+#replay {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+
+/*Your Replay*/
+
+#your-replay {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+#new-replay {
+    outline-color: darkgreen;
+    overflow: hidden;
+    height: 28px;
+}
+
+#your-replay svg:hover {
+    color: olivedrab;
+}
+
+#new-replaybtn {
+    border: rgb(0, 26, 255) 1px solid;
+    position: relative;
+    border-radius: 20px;
+    font-size: 10 px;
+    margin: 5px;
+    padding: 7px;
+    vertical-align: center;
+}
+
+#new-replaybtn:hover {
+    color: white;
+    background-color: rgb(0, 26, 255);
+}
+
+
+/*End Card Post*/
+
+.onlike {
+    color: rgb(0, 4, 255);
+}
+
+.ondislike {
+    color: red;
+}
+
+.center {
+    display: block;
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-tag,
+.img-tag:hover,
+.img-tag:visited {
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    #conarea {
+        margin-left: 184px;
+        margin-right: 10%;
+        padding: 0.7em;
+    }
+    #moretopbtn {
+        display: none;
+    }
+    #moretopbtn2 {
+        position: fixed;
+        text-decoration: none;
+        color: black;
+        background-color: rgba(235, 222, 222, 0.596);
+        border-radius: 7px;
+        padding: 2px;
+        top: 68px;
+        left: 20px;
+        cursor: pointer;
+        display: block;
+    }
+    #moretop-sec {
+        position: fixed;
+        z-index: 0;
+        padding-top: 75px;
+        text-align: center;
+        display: block;
+        background-color: rgba(255, 255, 255, 0);
+        width: auto;
+        height: auto;
+    }
+    #moretop-con {
+        position: fixed;
+        background-color: rgba(235, 222, 222, 0.596);
+        border-radius: 7px;
+        margin-top: 35px;
+        margin-left: 22px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        list-style: none;
+        text-align: center;
+    }
+    #moretop-con h3 {
+        display: none;
+    }
+    .rotate {
+        transform: rotateZ(90deg);
+        transform-origin: 10px 1px;
+    }
+}

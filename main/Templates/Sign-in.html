@@ -1,0 +1,42 @@
+<title>Log In</title>
+{% extends 'Base.html' %} {% block content %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="{% static 'css/Log_in.css' %}">
+
+</head>
+
+<body>
+    {% if msg %}
+    <script>
+        alert("{{upwin}}");
+    </script>
+    {% endif %}
+    <div id="align">
+        <form action="/Home/" method="post" id="form">
+            {% csrf_token %}
+            <label>Email</label>
+            <input type="email" name="email" placeholder="learneasily@gmail.com">
+            <br>
+            <label>Password</label>
+            <input type="text" name="password" placeholder="Ahmad is good">
+            <br>
+            <input type="submit" id="button">
+            <small>Don't have account <a href="/Home/sign-up/">Sign Up</a></small>
+            <br>
+            <small><a href="reset_password">Forget Password</a></small>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
+{% endblock %}

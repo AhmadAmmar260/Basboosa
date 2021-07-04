@@ -1,0 +1,460 @@
+body {
+    background-image: url("/static/css/images/sea.jpg");
+    background-position-x: center;
+    margin: 0px;
+    font-family: arial, "comic sans MS";
+}
+
+
+/*Nav Bar*/
+
+header {
+    background-color: rgba(255, 255, 255, 0.815);
+    border-bottom: 1px solid black;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.815);
+    z-index: 1;
+    text-align: center;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgb(50, 192, 211);
+    padding: 10px;
+}
+
+#navbar a:hover {
+    /*border: 1px solid rgb(226, 97, 11);
+    background-color: rgba(255, 255, 255, 0.829);*/
+    color: rgb(226, 97, 11);
+}
+
+#logo h3 {
+    display: inline;
+    position: relative;
+    color: rgb(255, 115, 0);
+    font-size: 33px;
+    font-weight: normal;
+}
+
+
+/*Nav Bar End*/
+
+
+/*---Suggesion Navbar---*/
+
+#sug-nav {
+    display: inline-block;
+    width: 100%;
+    padding-top: 13px;
+    margin-top: 20%;
+    text-align: center;
+}
+
+#sug-nav svg {
+    border: 1px solid rgb(33, 140, 202);
+    color: rgb(33, 140, 202);
+    border-radius: 20px;
+    padding: 6px;
+    margin: 1px;
+}
+
+#sug-nav a:visited {
+    color: white;
+}
+
+#sug-nav svg:hover {
+    color: White;
+    background-color: rgb(33, 140, 202);
+}
+
+#search-sec {
+    display: none;
+}
+
+#search {
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.699);
+    height: 40px;
+    width: 55%;
+    font-size: 15px;
+}
+
+#searchbtn {
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(0, 99, 248, 0.699);
+    height: 40px;
+    margin-left: -5px;
+}
+
+
+/*Buttons Content*/
+
+
+/*Add Post Content*/
+
+#add-post-sec {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#add-post-con {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.637);
+    padding: 1em;
+    display: inline-block;
+}
+
+
+/*Edit & Review Content*/
+
+#edit-sec {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#edit-con {
+    border: 1px solid rgba(255, 255, 255, 0.801);
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.801);
+    display: inline-block;
+    padding: 1em;
+    padding-left: 40px;
+    list-style: upper-roman;
+    text-align: left;
+}
+
+#edit-con li {
+    color: red;
+}
+
+
+/*---Suggesion Navbar---*/
+
+
+/*Post Card*/
+
+#conarea {
+    display: inline-block;
+    background-color: rgba(235, 222, 222, 0.767);
+    border-radius: 10px;
+    margin: 0.4em;
+    margin-top: 20px;
+}
+
+#post-card {
+    padding: 1em;
+    margin: 0.5em;
+    border: 2px solid rgb(9, 160, 9);
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+#post-card h1 {
+    display: inline;
+}
+
+
+/*
+#post-card p {
+    width: 100%;
+}
+*/
+
+
+/*Comment Button Section*/
+
+#p-comment {
+    color: olivedrab;
+    padding-right: 2px;
+}
+
+#p-comment svg:hover {
+    color: darkgreen;
+}
+
+
+/*like Button Section*/
+
+.like {
+    color: olivedrab;
+    padding-right: 2px;
+}
+
+.like svg:hover {
+    color: rgb(0, 4, 255);
+}
+
+
+/*Dislike Button Section*/
+
+.dislike {
+    color: olivedrab;
+    padding-right: 2px;
+}
+
+.dislike svg:hover {
+    color: red;
+}
+
+.dislike svg {
+    text-align: right;
+}
+
+#likenum {
+    color: rgb(105, 101, 101);
+    font-size: 16px;
+    font-family: "comic sans MS";
+}
+
+
+/*Heart Button Section*/
+
+.heart:hover {
+    color: red;
+}
+
+.heart {
+    color: olivedrab;
+}
+
+#comn {
+    color: rgb(105, 101, 101);
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+
+/*Comment Section*/
+
+#comm-sec {
+    display: none;
+    margin-top: 5px;
+    margin-left: 10px;
+    border-left: 1px solid darkgreen;
+    padding: 10px;
+}
+
+#comm {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+#comm h6 {
+    text-align: left;
+    padding: 5px;
+}
+
+
+/*Report Section*/
+
+.report {
+    text-decoration: none;
+    color: black;
+}
+
+.report:hover {
+    color: red;
+}
+
+#report-sec {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#report-con {
+    border: 1px solid rgba(255, 255, 255, 0.801);
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.801);
+    display: inline-block;
+    padding: 1em;
+}
+
+.close {
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#button {
+    border: red 1px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 7px;
+}
+
+#button:hover {
+    color: white;
+    background-color: red;
+}
+
+.close:hover,
+.close :focus {
+    color: red;
+}
+
+#textarea {
+    display: none;
+}
+
+
+/*Report Section End*/
+
+
+/*Your Comment*/
+
+#your-comm {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+#your-comm textarea {
+    outline-color: darkgreen;
+    display: flex;
+}
+
+#your-comm svg:hover {
+    color: olivedrab;
+}
+
+#new-commbtn {
+    border: rgb(0, 153, 255) 1px solid;
+    position: relative;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 7px;
+}
+
+#new-commbtn:hover {
+    color: white;
+    background-color: rgb(0, 153, 255);
+}
+
+
+/*Replay Section*/
+
+#replay-sec {
+    margin-left: 18px;
+    border-left: 1px solid rgb(0, 0, 0);
+    padding-left: 2px;
+}
+
+#replay {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+
+/*Your Replay*/
+
+#your-replay {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+#your-replay textarea {
+    outline-color: darkgreen;
+    display: inline;
+}
+
+#your-replay svg:hover {
+    color: olivedrab;
+}
+
+#new-replaybtn {
+    border: rgb(0, 26, 255) 1px solid;
+    position: relative;
+    border-radius: 20px;
+    font-size: 10 px;
+    margin: 5px;
+    padding: 7px;
+    vertical-align: center;
+}
+
+#new-replaybtn:hover {
+    color: white;
+    background-color: rgb(0, 26, 255);
+}
+
+
+/*End Card Post*/
+
+.onlike {
+    color: rgb(0, 4, 255);
+}
+
+.ondislike {
+    color: red;
+}
+
+.center {
+    display: block;
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-tag,
+.img-tag:hover,
+.img-tag:visited {
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+}

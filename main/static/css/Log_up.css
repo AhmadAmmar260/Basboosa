@@ -1,0 +1,60 @@
+#align {
+    text-align: center;
+}
+
+#form #button {
+    text-align: center;
+    color: black;
+    border: rgb(0, 153, 255) 1px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 5px;
+    padding: 7px;
+}
+
+#form #button:hover {
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
+
+#form {
+    padding: 20px;
+    margin-top: 200px;
+    font-family: "comic sans Ms";
+    border: 1px solid rgba(255, 255, 255, 0.692);
+    background-color: rgba(255, 255, 255, 0.692);
+    border-radius: 7px;
+    display: inline-block;
+}
+
+#form label {
+    font-size: 20;
+}
+
+#form input {
+    width: 300px;
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid rgb(100, 98, 98);
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+}
+
+input:focus::placeholder {
+    color: rgba(255, 255, 255, 0);
+}
+
+#form input:focus {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+a,
+a:visited {
+    color: rgb(0, 47, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}

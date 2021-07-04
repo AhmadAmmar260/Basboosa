@@ -1,0 +1,257 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions</title>
+
+
+
+    <link rel="stylesheet" href="{% static 'css/Suggetions.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a id="logo" href="/Home/">
+                <h3>Get Educated</h3><sup style="font-size:20px; color:black;">&beta;</sup>
+            </a> <br>
+            <a href="/Home/sign-in/">Log in</a>
+            <a href="/Features/Suggestions/">Suggesion</a>
+            <a href="/Features/About/">About</a>
+        </nav>
+
+        <nav id="sug-nav">
+            <!--Discover Button-->
+            <!--<a href=""><svg width="1.2em" height="1.2em" viewBox="0 0 16 17" class="bi bi-compass" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+            <path d="M6.94 7.44l4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+          </svg></a>-->
+            <!--Add Button-->
+            <a id="addbtn"><svg  width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg></a>
+            <!--Edit Button-->
+            <a id="editbtn"><svg  width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+          </svg></a>
+            <!--Search Button-->
+            <a id="serchstart"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+          </svg></a>
+            <!--Help Button-->
+            <a href="/Features/About"><svg  width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-question" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+          </svg></a>
+            <form action="" id="search-sec">
+                <input type="search" placeholder="eg Ahmad-Ammar" id="search">
+                <button id="searchbtn">Search</button>
+            </form>
+        </nav>
+    </header>
+
+
+    <!--Suggsion Navbar Functions-->
+
+    <!--Add Post Function-->
+    <div id="add-post-sec">
+        <div id="add-post-con">
+            <h3 style="display: inline;">Write Your Post</h3><span style="float: right; font-size:30px; margin-top:-9px;" class="close">&times;</span>
+            <hr>
+            <form action="">
+                <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+                <button>Send</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!--Edit and Review Your Suggesions-->
+    <div id="edit-sec">
+        <div>
+            <ul id="edit-con">
+                <li>Add More Colors</li>
+                <li>Disscus Sucks</li>
+                <li>Dark Theme</li>
+                <li>Somthing else</li>
+            </ul>
+        </div>
+    </div>
+    <!--End of Suggsion Navbar Functions-->
+
+    <div id="conarea">
+        <!--Card Post-->
+        <div class="">
+            <div id="post-card" class="container">
+                <h1>Card Title</h1>
+                <p style="text-align: justify;">
+                    Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite: Save the World, a cooperative shooter-survival
+                    game for up to four players to fight off zombie-like creatures and defend objects with fortifications they can build; Fortnite Battle Royale, a free-to-play battle royale game in which up to 100 players fight to be the last person
+                    <div style="text-align:center;">
+                        <a href="/static/css/images/best-friend.jpg" target=_blank class="img-tag"><img src="/static/css/images/best-friend.jpg" class="center" alt="">
+                            <small>This is a PHOTO Sample</small>
+                        </a>
+                    </div>standing; and Fortnite Creative, in which players are given complete freedom to create worlds and battle arenas. Save the World and Battle Royale were released in 2017 as early access titles, while Creative was released on December
+                    6, 2018. Save the World is available only for Windows, macOS,[b] PlayStation 4, and Xbox One, while Battle Royale and Creative released for all those platforms, and also for Nintendo Switch, iOS,[b] and Android devices.[b] The game
+                    is expected to also launch with the release of the next-generation PlayStation 5 and Xbox Series X consoles. While the Save the World and Creative versions have been successful for Epic Games, Fortnite Battle Royale in particular became
+                    a resounding success – drawing in more than 125 million players in less than a year, earning hundreds of millions of dollars per month, and becoming a cultural phenomenon.
+                </p>
+                <!--Comment-->
+                <a id="p-comment" title="Write a comment"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-chat-square-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M14 1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.5a2 2 0 0 1 1.6.8L8 14.333 9.9 11.8a2 2 0 0 1 1.6-.8H14a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            <path fill-rule="evenodd"
+                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                        </svg></a>
+                <small for="" id="likenum">1k</small>
+
+                <!--Like-->
+                <a title="Drop a Like" class="like"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-hand-thumbs-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16v-1c.563 0 .901-.272 1.066-.56a.865.865 0 0 0 .121-.416c0-.12-.035-.165-.04-.17l-.354-.354.353-.354c.202-.201.407-.511.505-.804.104-.312.043-.441-.005-.488l-.353-.354.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581 0-.211-.027-.414-.075-.581-.05-.174-.111-.273-.154-.315L12.793 9l.353-.354c.353-.352.373-.713.267-1.02-.122-.35-.396-.593-.571-.652-.653-.217-1.447-.224-2.11-.164a8.907 8.907 0 0 0-1.094.171l-.014.003-.003.001a.5.5 0 0 1-.595-.643 8.34 8.34 0 0 0 .145-4.726c-.03-.111-.128-.215-.288-.255l-.262-.065c-.306-.077-.642.156-.667.518-.075 1.082-.239 2.15-.482 2.85-.174.502-.603 1.268-1.238 1.977-.637.712-1.519 1.41-2.614 1.708-.394.108-.62.396-.62.65v4.002c0 .26.22.515.553.55 1.293.137 1.936.53 2.491.868l.04.025c.27.164.495.296.776.393.277.095.63.163 1.14.163h3.5v1H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+                        </svg></a>
+                <small for="" id="likenum">150</small>
+
+                <!--Dislike-->
+                <a title="Seriously c'mon" class="dislike"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-hand-thumbs-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M6.956 14.534c.065.936.952 1.659 1.908 1.42l.261-.065a1.378 1.378 0 0 0 1.012-.965c.22-.816.533-2.512.062-4.51.136.02.285.037.443.051.713.065 1.669.071 2.516-.211.518-.173.994-.68 1.2-1.272a1.896 1.896 0 0 0-.234-1.734c.058-.118.103-.242.138-.362.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.094 2.094 0 0 0-.16-.403c.169-.387.107-.82-.003-1.149a3.162 3.162 0 0 0-.488-.9c.054-.153.076-.313.076-.465a1.86 1.86 0 0 0-.253-.912C13.1.757 12.437.28 11.5.28v1c.563 0 .901.272 1.066.56.086.15.121.3.121.416 0 .12-.035.165-.04.17l-.354.353.353.354c.202.202.407.512.505.805.104.312.043.44-.005.488l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.415-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.353.352.373.714.267 1.021-.122.35-.396.593-.571.651-.653.218-1.447.224-2.11.164a8.907 8.907 0 0 1-1.094-.17l-.014-.004H9.62a.5.5 0 0 0-.595.643 8.34 8.34 0 0 1 .145 4.725c-.03.112-.128.215-.288.255l-.262.066c-.306.076-.642-.156-.667-.519-.075-1.081-.239-2.15-.482-2.85-.174-.502-.603-1.267-1.238-1.977C5.597 8.926 4.715 8.23 3.62 7.93 3.226 7.823 3 7.534 3 7.28V3.279c0-.26.22-.515.553-.55 1.293-.138 1.936-.53 2.491-.869l.04-.024c.27-.165.495-.296.776-.393.277-.096.63-.163 1.14-.163h3.5v-1H8c-.605 0-1.07.08-1.466.217a4.823 4.823 0 0 0-.97.485l-.048.029c-.504.308-.999.61-2.068.723C2.682 1.815 2 2.434 2 3.279v4c0 .851.685 1.433 1.357 1.616.849.232 1.574.787 2.132 1.41.56.626.914 1.28 1.039 1.638.199.575.356 1.54.428 2.591z" />
+                        </svg></a>
+                <small for="" id="likenum">50</small>
+
+
+            </div>
+
+        </div>
+
+        <!--Comment Section-->
+        <div id="comm-sec">
+
+
+            <div id="your-comm">
+                <small>By You</small> <br>
+                <textarea name="messege" placeholder="Write Your Comment here" id="new-comm" cols="40" rows="1"></textarea>
+                <a type="submit" id="new-commbtn" style="top:-8;">Submit</a>
+            </div>
+            <br>
+            <!--End of Write your Comment-->
+
+
+
+            <div id="comm">
+                <small>By Ahmad</small>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <!--Heart Button-->
+                <a title="Give me a heart" class="heart"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                            class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg></a>
+
+                <small for="" id="comn" class="">150</small>
+
+                <!--Replay Button-->
+                <a id="replaybtn"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-return-right"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.146 5.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 9l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                            <path fill-rule="evenodd"
+                                d="M3 2.5a.5.5 0 0 0-.5.5v4A2.5 2.5 0 0 0 5 9.5h8.5a.5.5 0 0 0 0-1H5A1.5 1.5 0 0 1 3.5 7V3a.5.5 0 0 0-.5-.5z" />
+                        </svg></a>
+
+                <!--Report Button-->
+                <a class="report">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-flag-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M3.762 2.558C4.735 1.909 5.348 1.5 6.5 1.5c.653 0 1.139.325 1.495.562l.032.022c.391.26.646.416.973.416.168 0 .356-.042.587-.126a8.89 8.89 0 0 0 .593-.25c.058-.027.117-.053.18-.08.57-.255 1.278-.544 2.14-.544a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5c-.638 0-1.18.21-1.734.457l-.159.07c-.22.1-.453.205-.678.287A2.719 2.719 0 0 1 9 9.5c-.653 0-1.139-.325-1.495-.562l-.032-.022c-.391-.26-.646-.416-.973-.416-.833 0-1.218.246-2.223.916A.5.5 0 0 1 3.5 9V3a.5.5 0 0 1 .223-.416l.04-.026z"/>
+                        </svg>
+                </a>
+            </div>
+
+
+            <!--Replay Section-->
+            <div id="replay-sec">
+
+
+                <div id="your-replay">
+                    <small>By You</small> <br>
+                    <textarea name="messege" placeholder="Write Your Replay here" id="new-replay" cols="30" rows="1"></textarea>
+                    <a type="submit" id="new-replaybtn" style="top:-8;">Submit</a>
+                </div>
+                <br>
+
+
+                <div id="replay">
+                    <small>Replaied @Ahmad</small>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+                    <!--Heart Button-->
+                    <a title="Give me a heart" class="heart"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg></a>
+
+                    <small for="" id="comn" class="">150</small>
+
+                    <!--Report Button-->
+                    <a class="report">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-flag-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M3.762 2.558C4.735 1.909 5.348 1.5 6.5 1.5c.653 0 1.139.325 1.495.562l.032.022c.391.26.646.416.973.416.168 0 .356-.042.587-.126a8.89 8.89 0 0 0 .593-.25c.058-.027.117-.053.18-.08.57-.255 1.278-.544 2.14-.544a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5c-.638 0-1.18.21-1.734.457l-.159.07c-.22.1-.453.205-.678.287A2.719 2.719 0 0 1 9 9.5c-.653 0-1.139-.325-1.495-.562l-.032-.022c-.391-.26-.646-.416-.973-.416-.833 0-1.218.246-2.223.916A.5.5 0 0 1 3.5 9V3a.5.5 0 0 1 .223-.416l.04-.026z"/>
+                            </svg>
+                    </a>
+
+                </div>
+
+
+                <br>
+            </div>
+            <!--Replay Section End-->
+
+
+        </div>
+        <!--Comment Section End-->
+
+
+
+        <!--Report Section-->
+        <div id="report-sec">
+            <div id="report-con">
+                <span class="close">&times;</span>
+                <form action="">
+                    <label>Report Section</label> <br>
+                    <input type="email" name="email" placeholder="Write Your mail">
+                    <br>
+                    <br>
+                    <label>Select your problem</label>
+                    <select name="" id="select">
+                            <option value="">prob 1</option>
+                            <option value="">prob 2</option>
+                            <option value="">prob 3</option>
+                            <option value="" id="op">Others</option>
+                        </select>
+                    <br>
+                    <input type="checkbox" id="checkboxe"> <label for="">Include More info</label>
+                    <br>
+                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                    <br>
+                    <input type="submit" id="button" value=" Send ">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="{% static 'js/Suggesions.js' %}"></script>
+</body>
+
+</html>
