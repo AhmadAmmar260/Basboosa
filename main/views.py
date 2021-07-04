@@ -31,13 +31,16 @@ def home(request):
             t.append(i.val()['Username'])
         for i in valuess:
             q.append(i.val()['Comment_Description'])
-      xxx=1
+      
         x = zip(t,q)
         y=list(x)
-
-
         return httpss.render(request,'Home.html',{'Infos':y})
     
+    
+def add_like(request):
+    data={"Status":"0","IP":"192.168.0.1"}
+    db.child('Likes').push(data)
+    httpss.redirect('/Home/')
 
 def add_comment(request):
     if request.method == 'POST':
