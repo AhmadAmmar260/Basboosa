@@ -36,7 +36,7 @@ def home(request):
     
 def Add_Like(request):
     print("I do that finally") 
-    return HttpResponse(""" <html><script>window.location.replace('/');</script></html> """)   
+    return HttpResponse(""" <html><script>window.location.replace('/Home');</script></html> """)   
 
 
 def add_comment(request):
