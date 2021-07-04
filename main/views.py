@@ -34,13 +34,11 @@ def home(request):
         y=list(x)
         return httpss.render(request,'Home.html',{'Infos':y})
     
-<<<<<<< HEAD
+
 def Add_Like(request):
     print("I do that finally") 
     return HttpResponse(""" <html><script>window.location.replace('/Home');</script></html> """)   
-=======
-    
->>>>>>> 01c47cde0314c7a9f0fe999d935dc2c44d4804af
+
 
 
 def add_comment(request):
