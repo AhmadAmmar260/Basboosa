@@ -4,7 +4,7 @@ from . import views
 app_name = "main"
 urlpatterns = [
     path('',views.home),
-    path('Drop_like',views.add_like,name='Drop_Like'),
+    #path('Drop_like',views.add_like,name='Drop_Like'),
     path('Add_Comment/',views.add_comment),
     
    # path('sign-in/',views.login),

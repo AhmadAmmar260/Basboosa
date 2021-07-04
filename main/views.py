@@ -1,7 +1,5 @@
 import django.shortcuts as httpss
-
 from django.http import HttpResponse
-
 import pyrebase
 
 config = {
@@ -37,10 +35,7 @@ def home(request):
         return httpss.render(request,'Home.html',{'Infos':y})
     
     
-def add_like(request):
-    data={"Status":"0","IP":"192.168.0.1"}
-    db.child('Likes').push(data)
-    httpss.redirect('/Home/')
+
 
 def add_comment(request):
     if request.method == 'POST':
