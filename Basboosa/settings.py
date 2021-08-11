@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import pymysql
 
+pymysql.install_as_MySQLdb()
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -77,17 +79,19 @@ WSGI_APPLICATION = 'Basboosa.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-   # 'default': {
-   #    'ENGINE': 'django.db.backends.postgresql',
-   #     'NAME':'basboosa',
-   #     'USER':'postgres',
-   #     'PASSWORD':'611539',
-   #     'HOST':'127.0.0.1',
-   # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'NAME':'main_basboosa',
+        'ENGINE': 'django.db.backends.mysql',
+        'USER':'root',
+        'PASSWORD':'611539',
+        'HOST':'192.168.0.112',
+        'PORT':'3306',
+        #port 3307 for production mode
+   }
+  #  'default': {
+  #      'ENGINE': 'django.db.backends.sqlite3',
+  #      'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+  #  }
 
 }
 
